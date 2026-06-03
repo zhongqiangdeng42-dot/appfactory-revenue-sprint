@@ -98,8 +98,8 @@
             <p>Audit scope</p>
             <strong>$500 fixed</strong>
           </div>
-          <div class="progress" aria-label="Daily target progress">
-            <span style="width: 0%"></span>
+          <div class="progress" aria-label="Fixed audit scope indicator">
+            <span style="width: 100%"></span>
           </div>
           <div class="tracker-grid">
             <div>
@@ -163,6 +163,49 @@
                 <li>Packaged evidence can become proof for paid audits and build sprints.</li>
                 <li>ASC IDs remain the hard boundary before real sandbox or production purchase tests.</li>
               </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="audit-sample">
+        <div class="section-heading compact">
+          <h2>What the $500 audit produces.</h2>
+          <p>
+            The first deliverable is a release-readiness report that separates local
+            engineering work from owner-only Apple account actions.
+          </p>
+        </div>
+        <div class="sample-grid">
+          <article class="sample-panel">
+            <span>Sample finding</span>
+            <h3>ParkTimer local release hygiene passed, ASC mapping blocked revenue proof.</h3>
+            <p>
+              StoreKit products, Fastlane lanes, screenshots, metadata, and build number
+              alignment were checked. The blocker was not another code pass: the current
+              App Store Connect API context could not find the expected app record, so
+              sandbox purchase availability could not be claimed.
+            </p>
+          </article>
+          <article class="sample-panel">
+            <span>Deliverables</span>
+            <ul class="deliverable-list">
+              <li>Pass/fail/blocked evidence table for StoreKit, signing, screenshots, metadata, and TestFlight.</li>
+              <li>Owner-only action list for Apple Developer and App Store Connect steps.</li>
+              <li>Private-information boundary before credentials, source, or payment data are shared.</li>
+              <li>Fixed repair-sprint quote only after the blocker is classified.</li>
+            </ul>
+          </article>
+          <article class="sample-panel">
+            <span>Boundary</span>
+            <p>
+              No App Review approval guarantee, no password or private-key custody, no
+              copied apps, and no revenue claim until App Store availability and payment
+              evidence exist.
+            </p>
+            <div class="buyer-links">
+              <a href="docs/sample-audit-parktimer.md">Read sample audit</a>
+              <a href="docs/500-audit-scope.md">Read audit scope</a>
             </div>
           </article>
         </div>
