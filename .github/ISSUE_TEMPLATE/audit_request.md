@@ -50,8 +50,25 @@ Choose any that apply:
 - [ ] I understand the first paid diagnostic is USD 500 and work starts after
       payment, marketplace escrow, or signed payable invoice.
 
+## Payment path preference
+
+Choose one. Do not post card numbers, bank details, private keys, or account
+credentials here.
+
+- [ ] Marketplace escrow
+- [ ] Stripe or PayPal invoice
+- [ ] Signed payable invoice
+- [ ] Need a private channel first
+
 ## Private follow-up
 
 Preferred private contact method, if you are comfortable sharing it publicly:
 
 If not, write "private channel needed".
+
+## Invoice information
+
+Optional public-safe billing name or company name:
+
+Country/region for invoice tax wording, if you are comfortable sharing it
+publicly:
