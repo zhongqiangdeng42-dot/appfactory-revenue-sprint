@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zhongqiangdeng42-dot.github.io/appfactory-revenue-sprint/sitemap.xml
