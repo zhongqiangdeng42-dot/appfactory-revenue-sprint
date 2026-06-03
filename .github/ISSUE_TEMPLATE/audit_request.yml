@@ -1,0 +1,111 @@
+name: AppFactory iOS release-readiness audit
+description: Request a paid USD 500 iOS release-readiness diagnostic.
+title: "Audit request: "
+labels:
+  - audit-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not include passwords, private keys, Apple account credentials, App Store Connect API keys, payment details, customer data, or unreleased source code.
+
+        The first paid diagnostic is USD 500. Work starts after payment, marketplace escrow, or a signed payable invoice.
+  - type: input
+    id: app_name
+    attributes:
+      label: App or business name
+      description: Public-safe name only.
+      placeholder: "Example: ParkTimer"
+    validations:
+      required: true
+  - type: input
+    id: public_link
+    attributes:
+      label: Public link
+      description: App Store, TestFlight public link, website, repository, or product page if safe to share.
+      placeholder: "https://..."
+    validations:
+      required: false
+  - type: dropdown
+    id: current_stage
+    attributes:
+      label: Current stage
+      options:
+        - Idea only
+        - Existing app needs rescue
+        - Ready for App Store review
+        - Need StoreKit or subscription help
+        - TestFlight / App Store Connect blocker
+    validations:
+      required: true
+  - type: checkboxes
+    id: blockers
+    attributes:
+      label: Specific blocker
+      description: Choose all that apply.
+      options:
+        - label: SwiftUI/Xcode project structure
+        - label: StoreKit product loading
+        - label: Subscription or lifetime IAP setup
+        - label: RevenueCat entitlement or offering setup
+        - label: TestFlight upload
+        - label: App Store screenshots
+        - label: Fastlane metadata
+        - label: Signing/provisioning
+        - label: App Review / IAP linkage
+        - label: Sandbox purchase / restore verification
+        - label: Server-side webhook or entitlement state
+        - label: Other
+    validations:
+      required: true
+  - type: textarea
+    id: seven_day_outcome
+    attributes:
+      label: What needs to be true in 7 days?
+      description: Describe the concrete release or monetization outcome.
+      placeholder: "Example: TestFlight build uploaded, sandbox monthly purchase unlocks Premium, and restore works on a clean install."
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_path
+    attributes:
+      label: Payment path preference
+      description: Do not post card numbers, bank details, private keys, or account credentials here.
+      options:
+        - Marketplace escrow
+        - Stripe or PayPal invoice
+        - Signed payable invoice
+        - Need a private channel first
+    validations:
+      required: true
+  - type: checkboxes
+    id: budget_confirmation
+    attributes:
+      label: Budget confirmation
+      options:
+        - label: I understand the first paid diagnostic is USD 500 and work starts after payment, marketplace escrow, or signed payable invoice.
+          required: true
+  - type: input
+    id: private_followup
+    attributes:
+      label: Private follow-up
+      description: Public-safe contact method only. Write "private channel needed" if you do not want to share contact details publicly.
+      placeholder: private channel needed
+    validations:
+      required: true
+  - type: input
+    id: billing_name
+    attributes:
+      label: Optional public-safe billing name
+      description: Company or legal billing name only if safe to share publicly.
+      placeholder: private channel needed
+    validations:
+      required: false
+  - type: input
+    id: invoice_region
+    attributes:
+      label: Optional invoice country/region
+      description: Country or region for invoice wording if safe to share publicly.
+      placeholder: private channel needed
+    validations:
+      required: false
