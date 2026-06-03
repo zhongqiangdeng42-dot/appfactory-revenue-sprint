@@ -35,7 +35,7 @@ Public page:
 
 Request a paid audit:
 
-<https://github.com/zhongqiangdeng42-dot/appfactory-revenue-sprint/issues/new?template=audit_request.md>
+<https://github.com/zhongqiangdeng42-dot/appfactory-revenue-sprint/issues/new?template=audit_request.yml>
 
 The GitHub issue is public. Do not post credentials, private keys, customer
 data, payment details, or unreleased source code. Sensitive details move to a
